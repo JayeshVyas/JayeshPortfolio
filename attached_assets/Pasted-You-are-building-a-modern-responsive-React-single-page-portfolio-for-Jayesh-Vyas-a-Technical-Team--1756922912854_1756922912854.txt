@@ -1,0 +1,275 @@
+You are building a modern, responsive React single-page portfolio for Jayesh Vyas, a Technical Team Lead / Full-Stack Engineer with 8+ years experience. Use Vite + React + TypeScript (preferred) or CRA + TS. Styling: Tailwind CSS. Routing: react-router-dom. Forms: controlled components with validation. Include clean, accessible HTML, keyboard navigation, SEO meta tags, and Open Graph tags.
+
+Brand & Visual
+
+Tone: Senior, reliable, hands-on technical lead & solution architect.
+
+Layout: Minimal, roomy grid, generous white space, large section headings.
+
+Colors:
+
+Primary: #0ea5e9 (sky-500)
+
+Accent: #22c55e (emerald-500)
+
+Text: #0f172a (slate-900) / #475569 (slate-600)
+
+Background: #f8fafc (slate-50)
+
+Typography: System font stack via Tailwind; headings bold with tighter tracking.
+
+Dark mode: Include a theme toggle (persist with localStorage).
+
+Tech & Libraries
+
+React 18 + TypeScript, Tailwind CSS, react-router-dom.
+
+Framer Motion for subtle reveals.
+
+React Icons (simple, consistent iconography).
+
+Email via EmailJS or mailto: fallback.
+
+Site Structure (Routes)
+
+/ (Home)
+
+/experience
+
+/projects
+
+/skills
+
+/articles (optional placeholder for future blog)
+
+/contact
+
+Global Components
+
+Header with sticky nav, logo monogram “JV”, section links, dark-mode toggle.
+
+HeroCard with title, role, short value prop, CTA buttons.
+
+TechChip (skill pill).
+
+Timeline for roles/achievements.
+
+ProjectCard with tags, role, stack, outcomes, links.
+
+Metric (icon + label + number).
+
+Footer with social links & copyright.
+
+Home (/)
+
+Hero section
+
+H1: “Jayesh Vyas”
+
+Subhead: “Technical Team Lead • Solution Architect • Full-Stack Engineer”
+
+One-liner: “I build scalable, cloud-native products and lead high-performing teams shipping with quality and speed.”
+
+CTAs: “View Projects”, “Download Resume (PDF)”, “Contact Me”.
+
+Key Highlights (metrics)
+
+Team leadership: “Led 10–14 engineers”
+
+Delivery: “40% faster deployments (microservices on AWS)”
+
+Scale: “10,000+ devices served securely”
+
+Impact: “2× faster client onboarding; 35% fewer manual errors”
+
+Logos/Badges (textual for now)
+
+Siemens, Acnovate, Zucitech (text badges or simple monochrome logo placeholders)
+
+Experience (/experience)
+
+Build a Timeline with company, role, period, location, key outcomes (not tasks). Each entry shows stack and quantified impact.
+
+Current — Zucitech (04/2025–Present), Bangalore — Full Stack Team Lead (Solution Architect)
+
+Lead 10–14 engineers; code reviews, mentoring, sprint planning.
+
+Designed in-house client onboarding platform (insurance/healthcare) → 2× faster onboarding, 35% fewer manual errors.
+
+Responsibilities: Solution architecture, microservices, quality gates.
+
+Stack: Java/Go/TypeScript, React/Angular, AWS, Docker, CI/CD.
+
+Siemens (12/2022–Current), Bangalore — Senior Software Engineer (IEM & IED Devices)
+
+Designed/deployed Go + AWS microservices for energy device metrics → 45% latency reduction; 40% faster deployments via CI/CD.
+
+Built secure storage with backward version compatibility for 10,000+ devices.
+
+Implemented server power notifications & graceful shutdown queue APIs.
+
+E2E ownership: requirements → testing → dashboards/alarms/monitors.
+
+Stack: Go, Java, Angular, AWS (EC2/Lambda/S3), NoSQL, CI/CD.
+
+Acnovate Technologies (10/2017–11/2022), Bangalore — Senior Development Engineer
+
+Delivered enterprise PLM apps (Java, AngularJS, MySQL, Oracle).
+
+Launched ETL pipelines; optimized complex high-perf queries.
+
+Built Qiwk Lite dashboards (Bar/Pie) from DB data.
+
+Led 5+ product launches; engaged 15+ clients end-to-end.
+
+A/B, Auto-Targeting, Multivariate Testing capabilities.
+
+Include “Show more” accordions for bullet expansion. Add “Download detailed CV (PDF)” at top.
+
+Projects (/projects)
+
+Cards with image placeholder, tags, problem, outcome, and stack.
+
+DINE FIX — “AI-powered ops for restaurants”
+
+Problem: fragmented ops; solution: AI + modern stack.
+
+Status: in progress.
+
+Tags: AI, Microservices, React, AWS.
+
+PEERLY — “Freemium peer knowledge network”
+
+Goal: enable sharing + premium features.
+
+Status: MVP exploration.
+
+Tags: Platform, React, Node, PostgreSQL.
+
+Energy Device Platform (Siemens)
+
+Microservices on AWS, metrics ingestion, dashboards.
+
+Outcome: 45% latency reduction, 40% faster deployments.
+
+Client Onboarding Platform (Zucitech)
+
+Automated workflows; 2× faster onboarding, 35% fewer errors.
+
+Skills (/skills)
+
+Group & render as filterable chips with proficiency bars (self-rated).
+
+Languages: Java, Golang, JavaScript, TypeScript, Ruby, SQL (MySQL)
+Frameworks: Spring Boot, Hibernate, Node.js, React, Angular
+Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, CI/CD, Oracle Cloud
+Tools: Git, JIRA, Jenkins, Postman, Swagger
+AI/ML (working knowledge): Prompt Engineering, LLMs, Agent-based systems, Gen-AI tools
+Core: Microservices Architecture, System Design, DSA, HTML5/CSS3
+Soft Skills: Team Leadership, Ownership, Bias for Action
+
+Add interactive filters (e.g., “Backend”, “Frontend”, “Cloud”, “AI/ML”).
+
+Articles (/articles)
+
+Create a placeholder “Coming soon” with RSS-ready structure. Add a markdown renderer to support future posts (title, date, tags, content).
+
+Contact (/contact)
+
+Contact form (Name, Email, Message) with validation; send via EmailJS.
+
+Also show direct links:
+
+Email: jayeshvyascs@gmail.com
+
+Phone: +91 8502074843, +91 7976204815
+
+LinkedIn: /in/jayeshvyas321
+
+GitHub: /JayeshVyas
+
+Linktree: /jayesh_vyas
+
+Header & Footer
+
+Header: sticky, section links, active state underline, theme toggle.
+
+Footer: small bio + social icons; copyright © ${new Date().getFullYear()} Jayesh Vyas.
+
+Content (use verbatim/adapted summaries)
+
+Insert the following content where relevant:
+
+About blurb (Home)
+
+I’m a Technical Team Lead and Solution Architect specializing in cloud-native microservices, secure device platforms, and enterprise product delivery. I lead 10–14 engineer teams, ship faster with robust CI/CD, and design systems that scale reliably on AWS.
+
+Achievements (add as badges or bullets)
+
+Smart India Hackathon Finalist (2016)
+
+IIM Udaipur Prarambh (2014) — pitched startup idea
+
+State-level Under-19 Chess selection (2010)
+
+Education
+
+B.Tech, Computer Science Engineering (80%) — Rajasthan Technical University, Kota (2013–2017)
+
+Data Sources (Links)
+
+Resume facts (experience, skills, projects, education) provided by candidate.
+
+External links to include in UI:
+
+LinkedIn: https://www.linkedin.com/in/jayeshvyas321/
+
+GitHub: https://github.com/JayeshVyas
+
+Linktree: https://linktr.ee/jayesh_vyas
+
+Accessibility & SEO
+
+Semantic landmarks (header, main, nav, section, footer).
+
+Skip-to-content link.
+
+Alt text for all images/placeholders.
+
+Page titles & meta descriptions per route.
+
+Schema.org Person and WebSite JSON-LD.
+
+Performance
+
+Lazy-load route components.
+
+Preload critical fonts (if any).
+
+Optimize images (placeholder SVGs).
+
+Optional Extras
+
+Download Resume button (temporarily link to a placeholder /resume/Jayesh_Vyas_Resume.pdf; create a public/resume folder with a dummy file).
+
+Testimonials section (placeholder cards for client/manager quotes).
+
+CI/CD: Provide a GitHub Actions YAML to build and deploy to GitHub Pages or Replit hosting.
+
+Deliverables
+
+Production-ready React codebase with the above routes/components.
+
+Sample content filled with Jayesh’s details.
+
+README with:
+
+Local dev instructions
+
+How to swap resume PDF
+
+How to change colors/branding
+
+How to deploy (GitHub Pages / Replit)
+
+Lighthouse score > 90 on Performance, A11y, Best Practices, SEO (target).
