@@ -107,7 +107,7 @@ export function HeroSection() {
           
           {/* About Section */}
           <motion.div 
-            className="max-w-4xl mx-auto text-center content-container p-8 mx-4 lg:mx-0"
+            className="max-w-4xl mx-auto text-center content-container p-8"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
