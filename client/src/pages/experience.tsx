@@ -26,7 +26,7 @@ export default function Experience() {
             <div className="mt-8">
               <Button 
                 className="inline-flex items-center gap-2"
-                onClick={() => window.open(PERSONAL_INFO.resume, '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1RAs1wkVER4t_PZDe2kzFulfzGc9e3CJI/view?usp=sharing', '_blank')}
                 data-testid="button-download-cv"
               >
                 📄 Download Detailed CV

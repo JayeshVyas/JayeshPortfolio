@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { queryClient } from "./lib/queryClient";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { ParticlesBackground } from "@/components/particles-background";
 import Home from "@/pages/home";
 import Experience from "@/pages/experience";
 import Projects from "@/pages/projects";
@@ -33,9 +34,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <div className="min-h-screen bg-background text-foreground">
+        <div className="min-h-screen bg-background text-foreground relative">
+          <ParticlesBackground />
           <Header />
-          <main id="main-content">
+          <main id="main-content" className="relative z-10">
             <Router />
           </main>
           <Footer />

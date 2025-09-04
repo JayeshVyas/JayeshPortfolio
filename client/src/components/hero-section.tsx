@@ -27,7 +27,7 @@ export function HeroSection() {
         <div className="max-w-6xl mx-auto">
           {/* Hero Content */}
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-16 content-container p-8 mx-4 lg:mx-0"
             initial="initial"
             animate="animate"
             variants={staggerChildren}
@@ -95,7 +95,7 @@ export function HeroSection() {
             variants={staggerChildren}
           >
             {KEY_METRICS.map((metric, index) => (
-              <motion.div key={metric.label} variants={fadeInUp}>
+              <motion.div key={metric.label} variants={fadeInUp} className="card-enhanced p-4">
                 <Metric 
                   value={metric.value} 
                   label={metric.label}
@@ -107,7 +107,7 @@ export function HeroSection() {
           
           {/* About Section */}
           <motion.div 
-            className="max-w-4xl mx-auto text-center"
+            className="max-w-4xl mx-auto text-center content-container p-8 mx-4 lg:mx-0"
             initial="initial"
             animate="animate"
             variants={fadeInUp}

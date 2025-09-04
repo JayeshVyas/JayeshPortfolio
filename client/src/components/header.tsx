@@ -34,7 +34,7 @@ export function Header() {
         Skip to main content
       </a>
       
-      <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur-sm">
+      <header className="sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur-md shadow-lg">
         <nav className="container mx-auto px-4 lg:px-8" role="navigation" aria-label="Main navigation">
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
@@ -99,7 +99,7 @@ export function Header() {
           
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden border-t border-border bg-background" data-testid="mobile-menu">
+            <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-md" data-testid="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <Link
