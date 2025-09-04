@@ -77,82 +77,25 @@ export default function Contact() {
           </motion.div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
+            {/* Topmate Booking Link */}
             <motion.div 
-              className="bg-card p-8 rounded-xl border border-border"
+              className="bg-card p-8 rounded-xl border border-border flex flex-col items-center justify-center"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h2 className="text-xl font-bold mb-6">Send a Message</h2>
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Name</FormLabel>
-                        <FormControl>
-                          <Input 
-                            placeholder="Your name" 
-                            {...field} 
-                            data-testid="input-name"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl>
-                          <Input 
-                            type="email"
-                            placeholder="your.email@example.com" 
-                            {...field} 
-                            data-testid="input-email"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="Tell me about your project or opportunity..."
-                            rows={5}
-                            {...field} 
-                            data-testid="input-message"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full"
-                    disabled={isSubmitting}
-                    data-testid="button-send-message"
-                  >
-                    {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
-              </Form>
+              <h2 className="text-xl font-bold mb-6">Book a Session</h2>
+              <p className="text-lg text-muted-foreground mb-6 text-center">
+                Students and professionals can connect and book a 1:1 session for mentorship, career guidance, or technical help.
+              </p>
+              <a
+                href="https://topmate.io/jayesh_vyas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-primary text-white rounded-lg font-semibold shadow hover:bg-primary/90 transition-colors text-lg"
+              >
+                Book on Topmate
+              </a>
             </motion.div>
             
             {/* Contact Information */}
