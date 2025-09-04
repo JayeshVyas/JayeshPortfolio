@@ -63,7 +63,7 @@ export function HeroSection() {
                 size="lg" 
                 className="px-8"
                 data-testid="button-view-projects"
-                onClick={() => window.location.hash = '#projects'}
+                onClick={() => setLocation('/projects')}
               >
                 View Projects
               </Button>
