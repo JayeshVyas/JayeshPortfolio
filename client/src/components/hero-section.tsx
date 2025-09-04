@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Metric } from "./metric";
 import { PERSONAL_INFO, KEY_METRICS } from "@/lib/constants";
+import { useLocation } from "wouter";
 
 export function HeroSection() {
   const fadeInUp = {
@@ -18,6 +19,8 @@ export function HeroSection() {
     }
   };
 
+  // ...existing code...
+  const [, setLocation] = useLocation();
   return (
     <section className="py-20 lg:py-32" data-testid="hero-section">
       <div className="container mx-auto px-4 lg:px-8">
@@ -69,7 +72,7 @@ export function HeroSection() {
                 size="lg" 
                 className="px-8"
                 data-testid="button-download-resume"
-                onClick={() => window.open(PERSONAL_INFO.resume, '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1RAs1wkVER4t_PZDe2kzFulfzGc9e3CJI/view?usp=sharing', '_blank')}
               >
                 Download Resume
               </Button>
@@ -77,7 +80,7 @@ export function HeroSection() {
                 variant="ghost" 
                 size="lg"
                 data-testid="button-contact-me"
-                onClick={() => window.location.hash = '#contact'}
+                onClick={() => setLocation('/contact')}
               >
                 Contact Me →
               </Button>
