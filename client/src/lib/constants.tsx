@@ -34,7 +34,7 @@ export const EXPERIENCE_DATA = [
     current: true
   },
   {
-    period: "Dec 2022 – Current",
+    period: "Dec 2022 – Mar 2025",
     title: "Senior Software Engineer",
     company: "Siemens",
     location: "Bangalore, India",
